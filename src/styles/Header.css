@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  width: 82%;
+  background: var(--color-bg);
+  padding: 50px 80px;
+  top: 0;
+  /* margin-left: 0; */
+  box-shadow: 0 3px 3px var(--color-shadow);
+  z-index:1;
+}
+
+.header .logo-container {
+  height: 134px;
+  width: 134px;
+  background: url("../assets/logo.png");
+
+  margin-right: 32px;
+}
+/* separate css is created for this class*/
+.logo-container{
+  cursor: pointer;
+}
+/* does scale and rortate the duck image when hovered*/
+.logo-container:hover{
+  transition: transform .5s;
+  transform: rotate(-20deg) scale(1.2);
+}
+
+.header h1 {
+  flex-grow: 1;
+}
